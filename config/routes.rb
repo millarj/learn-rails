@@ -6,6 +6,7 @@ LearnRails::Application.routes.draw do
   # root 'welcome#index'
   
   resources :contacts, only: [:new, :create]
+  resources :visitors, only: [:new, :create]
   root 'visitors#new'
 
   # Example of regular route:
